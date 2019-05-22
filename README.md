@@ -1,3 +1,18 @@
+<table>
+ <tr>
+   <td>Name</td>
+   <td>Stmts</td>
+   <td>Miss</td>
+   <td>Cover</td>
+  </tr>
+  <tr>
+   <td>draw.py</td>
+   <td>82</td>
+   <td>10</td>
+   <td>88</td>
+   </tr>
+  </table>
+
 <h1>Drawing Tool</h1>
 In a nutshell, the program reads the input.txt, executes a set of commands from the file, step by step, and produces output.txt.<br>
 At this time, the functionality of the program is quite limited but this might change in the future.<br>

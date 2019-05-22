@@ -1,3 +1,4 @@
+<h1>Drawing Tool</h1>
 <table>
  <tr>
    <td>Name</td>
@@ -12,8 +13,10 @@
    <td>88</td>
    </tr>
   </table>
+ 
+<p>Ran 3 tests in 0.002s</p>
+<p>OK</p>
 
-<h1>Drawing Tool</h1>
 In a nutshell, the program reads the input.txt, executes a set of commands from the file, step by step, and produces output.txt.<br>
 At this time, the functionality of the program is quite limited but this might change in the future.<br>
 At the moment, the program should support the following set of commands:<br><br>

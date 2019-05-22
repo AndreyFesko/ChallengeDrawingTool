@@ -92,9 +92,9 @@ class Drawing():
                 file.write(line + '\n')
 
 
-def main():
+def main(file):
     try:
-        with open('input.txt', 'r') as file:
+        with open(file, 'r') as file:
             for line in file:
                 line = line.rstrip().split(' ')
                 for idx, token in enumerate(line):
@@ -105,13 +105,14 @@ def main():
                     obj.create_border()
                     continue
                 try:
-                    obj.commands[line[0]](line[1:])
                     obj.write_current_matrix()
+                    obj.commands[line[0]](line[1:])
                 except UnboundLocalError:
                     sys.exit('First you need to create a canvas!')
+            obj.write_current_matrix()
     except OSError:
         sys.exit('File issues!')
 
 
 if __name__ == '__main__':
-    main()
+    main('input.txt')
